@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Address Label Viewer", "Address Label Viewer.vbproj", "{A8B2F61A-64ED-4F85-9E42-3097004B5D48}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A8B2F61A-64ED-4F85-9E42-3097004B5D48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8B2F61A-64ED-4F85-9E42-3097004B5D48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8B2F61A-64ED-4F85-9E42-3097004B5D48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8B2F61A-64ED-4F85-9E42-3097004B5D48}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {20B3B9A6-B12A-4482-A4F7-291DA8511DD8}
+	EndGlobalSection
+EndGlobal
