@@ -1,4 +1,5 @@
-﻿Public Class AddressLabelViewerForm
+﻿'Assignment Header
+Public Class AddressLabelViewerForm
     Private Sub ExitButton_Click(sender As Object, e As EventArgs) Handles ExitButton.Click
         Me.Close()
     End Sub
@@ -6,7 +7,8 @@
     Private Sub ClearButton_Click(sender As Object, e As EventArgs) Handles ClearButton.Click
         Dim textBox As Control
         DisplayLabel.Text = ""
-        For Each Textbox In Me.Controls
+        'For Each textBox In Me.Controls 'this is good work but the container is the MailingAddressGroupBox - TJR
+        For Each textBox In MailingAddressGroupBox.Controls '  enjoy...
             If TypeOf textBox Is TextBox Then
                 textBox.Text = ""
             End If
@@ -25,7 +27,7 @@
 
     Sub ValidateTextBoxes()
         Dim problem As Boolean = False
-
+        'Too many IF's. What if you loop on the text boxes and had an array of strings like: evaluationMessages(friendyName,messageIfEmpty) - TJR
         If FirstNameTextBox.Text = "" Then
             AccumulateMessage("First Name is a required field.", False)
             FirstNameTextBox.Focus()
@@ -68,7 +70,7 @@
 
     End Sub
 
-    Sub AlertUser(ByVal Message As String)
+    Sub AlertUser(ByVal Message As String) 'variables camelCase
         MsgBox(Message)
         AccumulateMessage("", True)
     End Sub
@@ -89,7 +91,7 @@
 
     Sub Display()
         DisplayLabel.Text = FirstNameTextBox.Text _
-                            & vbNewLine & LastNameTextBox.Text _
+                            & " " & LastNameTextBox.Text _ 'First and last name should be on the same line - TJR
                             & vbNewLine & StreetAddressTextBox.Text _
                             & vbNewLine & CityTextBox.Text _
                             & vbNewLine & StateTextBox.Text & "," _
